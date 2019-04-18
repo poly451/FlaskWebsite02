@@ -11,6 +11,6 @@ server {
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
         proxy_set_header X-Forwarded-Proto $scheme;
 #        proxy_pass http://unix:/run/gunicorn/socket;
-        proxy_pass http://unix:/home/ec2-user/myproject/myprojectenv/lib/python3.7/site-packages/gunicorn/so$
+        proxy_pass http://unix:/home/ec2-user/myproject/myprojectenv/lib/python3.7/site-packages/gunicorn/sock.py
     }
 }
